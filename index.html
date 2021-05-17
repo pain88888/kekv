@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="with=devide-width, initial-scale=1.0">
     <title>Pain X Cheats</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
 </head>
+
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">Main</a></li>
                     <li><a href="">Cheats</a></li>
-                    <li><a href="">Discord</a></li>
+                    <li><a href="https://dsc.gg/kekv">Discord</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu"></i>
         </nav>
-    </section>
+
+<div class="text-box">
+    <h1>Pain X Cheats</h1>
+    <p>Welcome To Pain X Cheats,<br>have fun Cheating !
+    </p>
+    <a href="" class="hero-btn">Cheats</a>
+</div>
+
+</section>
+<!-----Javascript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
 
 </body>
 </html>
