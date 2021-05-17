@@ -4,11 +4,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    return "<h1><align=center><color=orange>Welcome Home !</h1></align></color>"
+    return "<h1>Welcome Home !</h1>"
 
 @app.route("/users/<name>/")
 def goto_user(name):
-    return f"<h1><align=center><color=orange>Welcome {name}</h1></align></color>"
+    return f"<h1>Welcome {name}</h1>"
 
 
 if __name__ == "__main__":
