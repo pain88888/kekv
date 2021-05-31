@@ -25,8 +25,8 @@ module.exports = {
           case '/cheats':
               renderHTML('./cheats.html', response);
               break;
-          case '/discord':
-                renderHTML('https://dsc.gg/kekv', response);
+          case '/main':
+                renderHTML('./index.html', response);
                 break;
 
           default:
