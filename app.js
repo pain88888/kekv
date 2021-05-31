@@ -25,6 +25,10 @@ module.exports = {
           case '/cheats':
               renderHTML('./cheats.html', response);
               break;
+          case '/discord':
+                renderHTML('https://dsc.gg/kekv', response);
+                break;
+
           default:
               response.writeHead(404);
               response.write('Route not defined');
